@@ -124,13 +124,13 @@
         </div>
         
         <form id="form">
-          <input type="text" id="first-name" name="first-name" placeholder="Name *" required>
+          <input type="text" id="first-name" name="first-name" placeholder="Name*" required>
           <input type="text" id="pronouns" name="pronouns" placeholder="Pronouns">
-          <input type="text" id="email" name="email" placeholder="Email *" required>
+          <input type="text" id="email" name="email" placeholder="Email*" required>
           <textarea name="message" id="message" form="form" 
-            placeholder="What would you like to chat about? *" required></textarea>
-          <input type="submit" value="send" id="send" action="https://formspree.io/f/xpzbppyn"
-            method="POST" onclick="invalidInput(this)">
+            placeholder="What would you like to chat about?*" required></textarea>
+          <button type="submit" id="send" action="https://formspree.io/f/xpzbppyn"
+            method="POST" onclick="invalidInput(this)"><img src="assets/images/icons/send.svg" id="send-icon">&ensp;Send</button>
         </form>     
       </div>
     </div>
