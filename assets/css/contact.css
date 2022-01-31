@@ -167,7 +167,7 @@ input:valid, textarea:valid {
 }
 
 .submitted:invalid {
-  border: 0.25rem solid red;
+  border: 0.25rem solid lightpink;
 }
 
 /*============================================================================================*/
