@@ -1,0 +1,442 @@
+/*============================================================================================*/
+/*------------------------------------ Universal Styles --------------------------------------*/
+/*============================================================================================*/
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* ======================= Font Styles ======================= */
+
+  h1 {
+    font-family: "Major Mono Display", monospace;
+    font-size: 1.25rem;
+    text-transform: none;
+    color: black;
+    position: relative;
+    z-index: 30;
+  }
+
+  a { 
+    cursor: pointer;
+    font-family: "Major Mono Display", monospace;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: white;
+  }
+
+  a:active {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  
+/*============================================================================================*/
+/*-------------------------------------- Header Styles ---------------------------------------*/
+/*============================================================================================*/
+
+header {
+  z-index: 20;
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(255, 214, 0);
+  color: black;
+}
+
+#logo-img {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  height: 3.5rem;
+}
+
+
+/* ===================== Navigation Bar ===================== */
+
+.nav-box {
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.navigation {
+  top: 0px;
+  display: none;
+  width: 100%;
+  height: 3rem;
+}
+
+.navigation li {
+  display: inline;
+  margin: 1.5rem;
+}
+
+.navigation a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.navigation .articles {
+  margin-right: 11rem;
+}
+
+.navigation .gallery {
+  position: relative;
+  left: -2.5rem;
+}
+
+.navigation .about {
+  position: relative;
+  left: -1rem;
+}
+
+/* =================== Hamburger Icon =================== */
+  
+#hamburger-icon {
+  position: absolute;
+  top: 1.4rem;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  right: 0.6rem;
+}
+
+#hamburger-icon div {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+#hamburger-icon:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ================ Hamburger Icon Open ================ */
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 3px);
+  transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -3px);
+  transform: rotate(45deg) translate(-5px, -3px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ===================== Mobile Menu ==================== */
+
+.mobile-menu {
+  z-index: 999;
+  display: none;
+  width: 20px;
+  list-style: none;
+  position: absolute;
+  top: 42px;
+  right: 80.5px;
+}
+
+.mobile-menu li {
+  padding: 20px 0px;
+  margin-left: 0px;
+  background-color:rgb(0, 0, 0);
+  width: 200px;
+  text-align: center;
+}
+
+.mobile-menu a {
+    color: white;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+.mobile-menu li:hover {
+  font-size: 110%;
+  transition: 0.3s;
+}
+
+.mobile-menu li:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =================== Social Media =================== */
+
+header .social-media {
+  display: none;
+}
+
+.social-media {
+  z-index: 30;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0.25rem;
+  height: 3rem;
+}
+
+.social-media li{
+  display: inline;
+  margin: 0 0.25rem;
+  text-decoration: none;
+}
+
+.social-media img {
+  filter: none;
+  height: 2.5rem;
+  border-radius: 100%;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.social-media li:hover {
+  transform: scale(1.1);
+}
+
+.social-media li:active {
+  opacity: 0.75;
+}
+
+
+#github {
+  background: white;
+}
+
+/*============================================================================================*/
+/*-------------------------------------- Footer Styles ---------------------------------------*/
+/*============================================================================================*/
+
+  footer {
+    z-index: 10;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    width: 100%;
+    height: 10rem;
+    border-top: 1.5rem solid rgb(255, 214, 0);
+  }
+
+  footer #footer-sticker {
+    height: 5rem;
+    position: absolute;
+    right: 0;
+    bottom: 8.5rem;
+  }
+
+  /* ===================== Back To Top ==================== */
+
+  .top {
+    background: whitesmoke;
+    position: relative;
+    top: -2rem;
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #arrow {
+    width: 2.5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #arrow:hover {
+    transform: scale(1.1)
+  }
+
+  #arrow:active {
+    opacity: 0.5;
+  }
+
+  /* ===================== Page Settings ==================== */
+
+  .toggle-color {
+    z-index: 50;
+    position: absolute;
+    right: 0;
+  }
+
+  .toggle-color li {
+    width: 2.5em;
+    height: 2.5rem;
+    border-radius: 100%;
+    border: 3px solid white;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggle-color img {
+    height: 2rem;
+  }
+
+  #sun {
+    display: none;
+    background-color: rgb(255, 214, 0);
+  }
+
+  #moon {
+    display: none;
+    background-color: rgb(98, 0, 255);
+  }
+
+
+
+
+/*============================================================================================*/
+/*-------------------------------------- Media Queries ---------------------------------------*/
+/*============================================================================================*/ 
+
+/* ===================== Screen Width: 480px ===================== */
+
+@media only screen and (min-width: 480px){
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===================== Screen Width: 600px ===================== */
+
+@media only screen and (min-width: 600px){
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===================== Screen Width: 769px ===================== */
+
+@media only screen and (min-width: 769px){
+
+}
+
+/* ===================== Screen Width: 1025px ===================== */
+
+@media only screen and (min-width: 1025px) {
+
+  header{ 
+    height: 10rem;
+    justify-content: flex-start;
+  }
+
+  h1 {
+    width: 50%;
+    font-size: 2.5rem;
+    margin: 0 0.25rem;
+    position: absolute;
+    top: 5rem;
+    left: 2.5%;
+  }
+
+  #logo-img {
+    z-index: 20;
+    height: 13rem;
+    position: relative;
+    top: -3rem;
+  }
+
+  header .social-media {
+    position: absolute;
+    top: 5rem;
+    right: 2.5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media img {
+    height: 3rem;
+  }
+
+  .nav-box {
+    display: flex;
+  }
+
+  .navigation { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  #hamburger-icon{
+    display: none;
+  }
+
+  footer {
+    height: 15rem;
+  }
+
+  footer #footer-sticker {
+    height: 17rem;
+    bottom: 0;
+  }
+
+ .top {
+    width: 10rem;
+    height: 10rem;
+    top: -3rem;
+  }
+
+  #arrow {
+    width: 4rem;
+  }
+
+  .toggle-color li {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* ===================== Screen Width: 1080px ===================== */
+
+@media only screen and (min-width: 1080px) {
+
+}
+
+
+/*============================================================================================*/
+/*--------------------------------------- End of File ----------------------------------------*/
+/*============================================================================================*/

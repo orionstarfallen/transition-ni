@@ -1,0 +1,247 @@
+/*============================================================================================*/
+/*------------------------------------ Universal Styles --------------------------------------*/
+/*============================================================================================*/
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* ======================= Font Styles ======================= */
+
+h2 {
+  font-family: "Major Mono Display", monospace;
+  font-size: calc(2rem + 1vw);
+  text-transform: lowercase;
+  padding: 1.25rem;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+/*============================================================================================*/
+/*-------------------------------------- Content Styles --------------------------------------*/
+/*============================================================================================*/
+
+.page-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+}
+
+.mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#mail {
+  border-radius: 100%;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 1rem;
+  border-radius: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0rem 0 1rem rgba(0, 0, 0, 0.75);
+  padding: 1rem 0;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  width: 80%;
+  border: none;
+  border-radius: 5rem;
+  border: 0.25rem solid rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  margin: 1rem;
+  padding: 1.25rem;
+  padding-bottom: 7.5rem;
+  border: none;
+  border-radius: 1.25rem;
+  resize: none;
+  border: 0.25rem solid rgba(0, 0, 0, 0.5);
+}
+
+#send {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  font-family: "Major Mono Display", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  text-transform: lowercase;
+  background: rgb(255, 214, 0);
+  color: black;
+  border: none;
+  border-radius: 5rem;
+  margin: 1rem;
+
+}
+
+#send-icon {
+  width: 1.5rem;
+}
+
+/* ======================= Animations ======================= */
+
+.mail:hover {
+  transform: scale(1.1);
+}
+
+.mail:active {
+  opacity: 0.75;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#send:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#send:active{
+  opacity: 0.75;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#page-content::-webkit-scrollbar { width: 0 !important }
+#message::-webkit-scrollbar { width: 0 !important }
+
+input, textarea:focus {
+  outline: none;
+}
+
+input:valid, textarea:valid {
+  border: 0.25rem solid lightblue;
+}
+
+.submitted:invalid {
+  border: 0.25rem solid red;
+}
+
+/*============================================================================================*/
+/*-------------------------------------- Media Queries ---------------------------------------*/
+/*============================================================================================*/ 
+
+@media only screen and (min-width: 769px) {
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  #page-content {
+    padding: 2rem;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    padding: 0 6rem;
+  }
+
+  .mail {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+
+  #mail {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+
+  form {
+    width: 80%;
+    padding: 1rem 0;
+    border-radius: 2.5rem;
+  }
+
+  input {
+    padding: 1rem 1.25rem;
+    width: 90%;
+  }
+
+  textarea {
+    width: 90%;
+    padding-bottom: 7.5rem;
+  }
+
+  #send {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  #send-icon{
+    width: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+
+}
+
+@media only screen and (min-width: 769px), (orientation: landscape){
+
+}
+
+
+
+/*============================================================================================*/
+/*--------------------------------------- End of File ----------------------------------------*/
+/*============================================================================================*/
