@@ -100,7 +100,7 @@ input {
   width: 80%;
   border: none;
   border-radius: 5rem;
-  border: 0.25rem solid rgba(0, 0, 0, 0.5);
+  border: 0.25rem solid rgb(255, 214, 0);
 }
 
 textarea {
@@ -112,7 +112,7 @@ textarea {
   border: none;
   border-radius: 1.25rem;
   resize: none;
-  border: 0.25rem solid rgba(0, 0, 0, 0.5);
+  border: 0.25rem solid rgb(255, 214, 0);
 }
 
 #send {
@@ -128,7 +128,6 @@ textarea {
   border: none;
   border-radius: 5rem;
   margin: 1rem;
-
 }
 
 #send-icon {
