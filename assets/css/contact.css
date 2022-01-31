@@ -116,8 +116,8 @@ textarea {
 }
 
 #send {
-  display: flex;
-  align-items: center;
+  width: 35%;
+  text-align: center;
   padding: 1rem 1.25rem;
   font-family: "Major Mono Display", Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
@@ -223,6 +223,7 @@ input:valid, textarea:valid {
   }
 
   #send {
+    width: 30%;
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
   }

@@ -49,7 +49,7 @@
           <li><a href="assets/html/articles.html" class="articles">Articles</a></li>
           <li><a href="assets/html/gallery.html" class="gallery">Gallery</a></li>
           <li><a href="about.html" class="about">About</a></li>
-          <li><a href="contact.html" class="contact">Contact</a></li>        
+          <li><a href="contact.php" class="contact">Contact</a></li>        
         </ul>
       </div>
 
@@ -84,7 +84,7 @@
           <li><a href="assets/html/articles.html" class="articles">Articles</a></li>
           <li><a href="assets/html/gallery.html" class="gallery">Gallery</a></li>
           <li><a href="about.html" class="about">About</a></li>
-          <li><a href="contact.html" class="contact">Contact</a></li>
+          <li><a href="contact.php" class="contact">Contact</a></li>
         </ul>
       </div>  
     </header>
@@ -129,7 +129,7 @@
           <input type="text" id="email" name="email" placeholder="Email *" required>
           <textarea name="message" id="message" form="form" 
             placeholder="What would you like to chat about? *" required></textarea>
-          <input type="submit" value="send" id="send" action="mailto:orionstarfallen@gmail.com"
+          <input type="submit" value="send" id="send" action="assets/php/contact-form-email.php"
             method="POST" enctype="multipart/form-data" onclick="invalidInput(this)">
         </form>     
       </div>
