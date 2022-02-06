@@ -39,6 +39,7 @@ p {
     width: 100%;
     color: white;
     background: rgb(29, 29, 29);
+    padding: 1rem;
   }
 
 
@@ -92,6 +93,10 @@ p {
   h2 {
     margin: 2rem;
     margin-top: 4rem;
+  }
+
+  #page-content {
+    padding: 2rem;
   }
 }
 
