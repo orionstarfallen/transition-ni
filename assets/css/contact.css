@@ -73,7 +73,8 @@ p {
   font-size: 0.8rem;
   padding: 0.5rem;
   border-radius: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #mail {
@@ -89,8 +90,9 @@ form {
   width: 90%;
   margin: 1rem;
   border-radius: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0rem 0 1rem rgba(0, 0, 0, 0.75);
+  background: black;
+  background-size: cover;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   padding: 1rem 0;
 }
 
@@ -101,7 +103,8 @@ input {
   width: 80%;
   border: none;
   border-radius: 5rem;
-  border: 0.25rem solid rgb(255, 214, 0);
+  border: none;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 textarea {
@@ -113,7 +116,8 @@ textarea {
   border: none;
   border-radius: 1.25rem;
   resize: none;
-  border: 0.25rem solid rgb(255, 214, 0);
+  border: none;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 #send {
@@ -129,6 +133,7 @@ textarea {
   border: none;
   border-radius: 5rem;
   margin: 1rem;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 #send-icon {
@@ -163,12 +168,20 @@ input, textarea:focus {
   outline: none;
 }
 
+input:hover {
+  transform: scale(1.05);
+}
+
+textarea:hover {
+  transform: scale(1.05);
+}
+
 input:valid, textarea:valid {
-  border: 0.25rem solid lightblue;
+  border: none;
 }
 
 .submitted:invalid {
-  border: 0.25rem solid lightpink;
+  border: 0.4rem solid red;
 }
 
 /*============================================================================================*/
