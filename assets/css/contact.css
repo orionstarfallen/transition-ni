@@ -175,7 +175,7 @@ input:valid, textarea:valid {
 /*-------------------------------------- Media Queries ---------------------------------------*/
 /*============================================================================================*/ 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
 
   h2 {
     font-size: 3rem;
@@ -231,15 +231,6 @@ input:valid, textarea:valid {
     width: 2rem;
   }
 }
-
-@media only screen and (min-width: 1025px){
-
-}
-
-@media only screen and (min-width: 769px), (orientation: landscape){
-
-}
-
 
 
 /*============================================================================================*/
