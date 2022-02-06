@@ -4,15 +4,14 @@
 
 html {
 	font-size: 16px;
-	padding: 0;
-	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
 }
 
 * {
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
-	font-size: 1rem;
-	text-align: justify;
-	color: white;
 }
 
 
@@ -43,6 +42,7 @@ p {
 	align-items: center;
 	width: 100%;
 	background: rgb(29, 29, 29);
+	color: white;
 }
 
 .banner {

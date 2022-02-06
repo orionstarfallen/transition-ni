@@ -5,8 +5,8 @@ function toggleLightMode(){
 
     page_content.style.background = "whitesmoke";
     page_content.style.color = "black";
-    moon.style.display = "block";
-    sun.style.display = "none";
+    moon.style.display = "none";
+    sun.style.display = "block";
   }
 
   function toggleDarkMode(){
@@ -16,6 +16,6 @@ function toggleLightMode(){
 
     page_content.style.background = "rgb(29, 29, 29)";
     page_content.style.color = "white";
-    moon.style.display = "none";
-    sun.style.display = "block";
+    moon.style.display = "block";
+    sun.style.display = "none";
   }

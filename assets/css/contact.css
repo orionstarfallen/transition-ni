@@ -21,6 +21,7 @@ h2 {
   font-family: "Major Mono Display", monospace;
   font-size: calc(2rem + 1vw);
   text-transform: lowercase;
+  text-align: center;
   padding: 1.25rem;
   font-weight: bolder;
 }
