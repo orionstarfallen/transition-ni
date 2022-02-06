@@ -26,6 +26,7 @@ p {
   font-size: 1rem;
 }
 
+
 /*============================================================================================*/
 /*-------------------------------------- Content Styles --------------------------------------*/
 /*============================================================================================*/
@@ -38,6 +39,7 @@ p {
     width: 100%;
     color: white;
     background: rgb(29, 29, 29);
+    padding: 1rem;
   }
 
 
@@ -45,8 +47,6 @@ p {
 
   #about-site {
     position: relative;
-    width: 90%;
-    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,17 +76,20 @@ p {
   }
 
   #donate-icon{
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
     align-self: center;
     width: 2.5rem;
   }
 
-
-/* ====================== About Author ====================== */
-
-  #container {
-    display: none;
+  #donate-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
-    
+
+  #donate-button:active {
+    -webkit-tap-highlight-color: transparent;
+  }
     
 
 /*============================================================================================*/

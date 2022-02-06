@@ -22,8 +22,8 @@ h2 {
 	font-size: calc(2rem + 1vw);
 	text-transform: lowercase;
 	text-align: center;
-	padding: 1.25rem;
 	font-weight: bolder;
+	padding: 1.25rem;
   }
 
 p {
@@ -35,16 +35,6 @@ p {
 /*-------------------------------------- Content Styles --------------------------------------*/
 /*============================================================================================*/
 
-.page-content {
-	position: relative;	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	background: rgb(29, 29, 29);
-	color: white;
-}
-
 .banner {
 	position: relative;
 	display: flex;
@@ -53,12 +43,11 @@ p {
 	align-items: center;
 	width: 100%;
 	height: 15rem;
-	font-family: 'Major Mono Display', Arial, Helvetica, sans-serif;
+	font-family: 'Major Mono Display', monospace;
 	background: linear-gradient(to right, rgba(0, 119, 255, 0.05), rgba(255, 0, 191, 0.05), 
 		rgba(255, 255, 255, 0), rgba(255, 0, 191, 0.05), rgba(0, 119, 255, 0.05)),
 		url('../images/banners/causeway.jpg') no-repeat center center; 
 	background-size: cover;
-	border-bottom: 0.5rem double rgb(255, 214, 0);
 	overflow: hidden;
 }
 
@@ -66,18 +55,27 @@ p {
 	text-transform: none;
 	text-shadow: 0 0 5rem 5rem black;
 	width: 100%;
+	color: white;
 }
 
-.text {
-	position: relative;
-	width: 90%;
-	padding-bottom: 1em;
+#page-content {
+	position: relative;	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	align-self: center;
-	padding-bottom: 8em;
-  }
+	width: 100%;
+	background: rgb(29, 29, 29); 
+	color: white;
+	padding: 1rem;
+}
+
+.wip-message {
+	font-family: 'Major Mono Display', monospace;
+	font-size: 1.25rem;
+	text-transform: lowercase;
+	text-align: center;
+	padding: 1rem 0;
+}
 
 
 
@@ -85,14 +83,12 @@ p {
 /*-------------------------------------- Media Queries ---------------------------------------*/
 /*============================================================================================*/ 
 
-@media only screen and (min-width: 769px) {
-
+@media only screen and (min-width: 1025px) {
 	.banner {
 		height: 30rem;
 		text-shadow: 0 0 2rem 2rem black;
 		-webkit-text-stroke-width: 0.5rem;
 		-webkit-text-stroke-color: rgba(255, 255, 255, 0.1);
-		border-bottom: 0.75rem double rgb(255, 214, 0);
 	}
 
 	.banner h2 {
@@ -100,7 +96,15 @@ p {
 		line-height: 5rem;
 	}
 
+	#page-content {
+		padding: 2rem;
+	}
+
+	.wip-message {
+		padding: 2.5rem 0;
+	}
 }
+
 
 /*============================================================================================*/
 /*--------------------------------------- End of File ----------------------------------------*/

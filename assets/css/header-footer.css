@@ -320,13 +320,22 @@ html {
   }
   
   .page-links a {
-    cursor: pointer;
     color: black;
     text-transform: none;
   }
 
+  #footer-resources {
+    margin-top: 0.25rem;
+  }
+
   .page-links li:hover {
+    cursor: pointer;
     transform: scale(1.1);
+  }
+
+  .pagelinks li:active {
+    -webkit-tap-highlight-color: transparent;
+    opacity: 0.75;
   }
   
   footer .social-media {
@@ -335,6 +344,14 @@ html {
   
   footer .social-media img {
     height: 2rem;
+  }
+
+  #sun-icon {
+    display: none;
+  }
+
+  #moon-icon {
+    display: block;
   }
 
   
@@ -571,7 +588,7 @@ html {
 
   footer #footer-sticker {
     height: 17rem;
-    bottom: -0.4rem;
+    bottom: -0.39rem;
   }
 }
 
