@@ -15,15 +15,15 @@ function invalidInput(){
 }
 
 function toggleLight(){
-    var form = document.getElementById('form');
     var mail = document.getElementById('mail-box');
 
-    mail.style.background = 'rgba(0, 0, 0, 1)';
+    mail.style.background = 'rgb(0, 0, 0)';
+    mail.style.color = 'white';
 }
 
   function toggleDark(){
-    var form = document.getElementById('form');
     var mail = document.getElementById('mail-box');
 
-    mail.style.background = 'rgba(255, 255, 255, 0.1)';
+    mail.style.background = 'rgb(255, 255, 255)';
+    mail.style.color = 'black';
   }

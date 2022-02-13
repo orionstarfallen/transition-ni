@@ -26,6 +26,20 @@ html {
     z-index: 30;
   }
 
+
+  h2 {
+    font-family: "Major Mono Display", monospace;
+    font-size: calc(2rem + 1vw);
+    text-transform: lowercase;
+    text-align: center;
+    padding: 1.25rem;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
   footer h4 {
     font-size: 2rem;
   }
@@ -62,6 +76,12 @@ html {
     height: 4rem;
     background-color: rgb(255, 214, 0);
     color: black;
+  }
+
+  h1 {
+    position: relative;
+    font-size: 1.25rem;
+    left: 0.5rem;
   }
 
   #logo-img {
@@ -237,6 +257,23 @@ html {
   #github {
     background: white;
   }
+  
+
+/*============================================================================================*/
+/*--------------------------------------- Page Styles ----------------------------------------*/
+/*============================================================================================*/
+
+#page-content {
+	position: relative;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: url('../images/banners/background-dark.svg');  /* Credit to svgbackgrounds.com */
+	background-size: cover;
+	color: white;
+	padding: 1rem;
+}
 
 
 /*============================================================================================*/
@@ -253,7 +290,7 @@ html {
     justify-content: center;
     background: rgb(255, 214, 0);
     width: 100%;
-    height: 11rem;
+    height: 13rem;
     border-top: 1rem solid whitesmoke;
   }
 
@@ -378,7 +415,7 @@ html {
     position: relative;
     background: black;
     color: white;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1rem;
     border-radius: 5rem;
     border: none;
@@ -397,17 +434,17 @@ html {
   /* ===================== Flag Sticker ==================== */
   
   .footer-right {
-    z-index: 10;
+    z-index: 0;
     position: absolute;
     right: 0;
-    top: 1.5rem;
+    top: -6rem;
   }
 
   footer #footer-sticker {
-    height: 5rem;
+    height: 6rem;
     position: relative;
     right: 0;
-    bottom: 6.5rem;
+    bottom: 0rem;
   }
 
 
@@ -434,30 +471,6 @@ html {
 /*-------------------------------------- Media Queries ---------------------------------------*/
 /*============================================================================================*/ 
 
-/* ===================== Screen Width: 480px ===================== */
-
-@media only screen and (min-width: 480px){
-
-  /* ========== Fonts ========== */
-
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-
-/* ===================== Screen Width: 600px ===================== */
-
-@media only screen and (min-width: 600px){
-
-  /* ========== Fonts ========== */  
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-
 /* ===================== Screen Width: 1025px ===================== */
 
 @media only screen and (min-width: 1025px) {
@@ -471,6 +484,16 @@ html {
     position: absolute;
     top: 5rem;
     left: 2.5%;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin: 2rem;
+    margin-top: 4rem;
+  }
+
+  p {
+    font-size: 1.25rem;
   }
 
 
@@ -523,7 +546,7 @@ html {
   /* ========== Footer ========== */
 
   footer {
-    height: 15rem;
+    height: 16rem;
     justify-content: space-between;
   }
 
@@ -583,12 +606,12 @@ html {
   
   .footer-right {
     position: relative;
-    top: -1.75rem;
+    top: -1.5rem;
   }
 
   footer #footer-sticker {
     height: 17rem;
-    bottom: -0.39rem;
+    bottom: -0.625rem;
   }
 }
 
