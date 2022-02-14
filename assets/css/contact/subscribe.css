@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 0 0.5rem;
   width: 90%;
 }
@@ -48,7 +48,7 @@ form {
   width: 90%;
   margin: 1rem;
   border-radius: 2.5rem;
-  background: url('../images/banners/form.svg'), black; /* Credit to svgbackgrounds.com */
+  background: url('../../images/banners/form.svg'), black; /* Credit to svgbackgrounds.com */
   background-position: bottom;
   background-repeat: no-repeat;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
@@ -178,13 +178,13 @@ input:valid, textarea:valid {
 
   form {
     width: 80%;
-    padding: 1rem 0;
+    padding: 2rem 0;
     border-radius: 2.5rem;
     margin-bottom: 1rem;
   }
 
   input {
-    padding: 1rem 1.25rem;
+    padding: 1.5rem 1.25rem;
     width: 90%;
   }
 
