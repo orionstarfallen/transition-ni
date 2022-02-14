@@ -5,7 +5,7 @@
 .banner {
 	position: relative;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -22,10 +22,6 @@
 	width: 100%;
 	color: white;
 	line-height: 1.75;
-}
-
-#transform {
-	font-size: calc(2.5rem + 1vw);
 }
 
 .wip-message {
@@ -49,19 +45,14 @@
 	}
 
 	.banner {
-		height: 20rem;
+		height: 10rem;
 	}
 
 	.banner h2 {
 		position: relative;
-		top: -2.5rem;
+		top: -1rem;
 		font-size: 4rem;
 		line-height: 1;
-	}
-
-	#transform {
-		font-size: 9rem;
-		line-height: 0.15;
 	}
 
 	#page-content {

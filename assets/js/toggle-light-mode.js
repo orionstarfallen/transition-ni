@@ -4,11 +4,12 @@ function toggleLightMode(){
     var sun = document.getElementById("sun");
     var footer = document.getElementById("footer");
 
-    page_content.style.background = "url('assets/images/banners/background.svg')";
+    page_content.style.background = "url('assets/images/banners/background.svg') center center";
+    page_content.style.backgroundSize = "cover";
     page_content.style.color = "black";
     moon.style.display = "none";
     sun.style.display = "block";
-    footer.style.borderTop = "1rem solid black"
+    footer.style.borderTop = "1rem solid black";
   }
 
   function toggleDarkMode(){
@@ -17,9 +18,10 @@ function toggleLightMode(){
     var sun = document.getElementById("sun");
     var footer = document.getElementById("footer");
 
-    page_content.style.background = "url('assets/images/banners/background-dark.svg')";
+    page_content.style.background = "url('assets/images/banners/background-dark.svg') center center";
+    page_content.style.backgroundSize = "cover";
     page_content.style.color = "white";
     moon.style.display = "block";
     sun.style.display = "none";
-    footer.style.borderTop = "1rem solid whitesmoke"
+    footer.style.borderTop = "1rem solid whitesmoke";
   }
